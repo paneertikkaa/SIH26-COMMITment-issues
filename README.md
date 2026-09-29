@@ -25,12 +25,12 @@ the index have been staged onto a machine.
 
 ```
 .
-├── app.py                   # Streamlit frontend — search UI, before/after slider, review queue
 ├── requirements.txt         # top-level (frontend) dependencies
 ├── scripts/
 │   ├── download_scene.py    # backend: STAC ingestion, GeoRSCLIP embedding, FAISS index, search + change comparison
 │   ├── requirements.txt     # backend-only dependencies
-│   └── test_tiles/          # sample tile images used for local testing (not part of the live index)
+│   └── app.py               # Streamlit frontend — search UI, before/after slider, review queue
+├── test_tiles               # sample tile images used for local testing (not part of the live index)
 └── .gitignore
 ```
 
@@ -109,5 +109,5 @@ planetary-computer · Streamlit, Folium, streamlit-image-comparison
 
 ---
 
-## License- ## Licenses
+## License
 This project uses third-party models. See the [licenses folder](./licenses/) for full copyright and license details.
