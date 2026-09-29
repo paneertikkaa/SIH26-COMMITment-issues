@@ -41,8 +41,8 @@ the index have been staged onto a machine.
 ### 1. Clone and install dependencies
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone <https://github.com/paneertikkaa/SIH26-COMMITment-issues/blob/main/app.py>
+cd <https://github.com/paneertikkaa/SIH26-COMMITment-issues/tree/main>
 pip install -r requirements.txt
 pip install -r scripts/requirements.txt
 ```
@@ -59,9 +59,6 @@ Hugging Face:
 ### 3. Imagery access
 
 Imagery is pulled from Sentinel-2 L2A via the Microsoft Planetary Computer STAC catalogue.
-This is likely open-access with no account needed for basic search — confirm this before
-relying on it for a live demo, and check whether a free Planetary Computer subscription
-key is needed if you hit rate limits.
 
 ---
 
@@ -90,15 +87,12 @@ comparison slider, and a ranked review queue with provenance detail per result.
 
 ## Model & dataset attribution
 
-Every pretrained model and dataset used needs its origin and licence declared. Licences
-below are believed correct but should be re-checked against each project's own LICENSE
-file or model card before submission — GeoRSCLIP in particular has had conflicting licence
-claims across sources.
+Every pretrained model and dataset used needs its origin and licence declared.
 
 | Component | Source | Licence |
 |---|---|---|
 | CLIP | Radford et al., ICML 2021 — [openai/CLIP](https://github.com/openai/CLIP) | MIT |
-| GeoRSCLIP (RS5M) | Zhang et al., arXiv 2306.11300 — [Zilun/GeoRSCLIP](https://huggingface.co/Zilun/GeoRSCLIP) | **Verify** — conflicting MIT/CC references seen |
+| GeoRSCLIP (RS5M) | Zhang et al., arXiv 2306.11300 — [Zilun/GeoRSCLIP](https://huggingface.co/Zilun/GeoRSCLIP) | CC |
 | OpenCLIP | [mlfoundations/open_clip](https://github.com/mlfoundations/open_clip) | MIT |
 | FAISS | [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | MIT |
 | Sentinel-2 L2A | ESA Copernicus, via Microsoft Planetary Computer | Copernicus open data licence (free, full, open) |
@@ -115,4 +109,5 @@ planetary-computer · Streamlit, Folium, streamlit-image-comparison
 
 ---
 
-## License
+## License- ## Licenses
+This project uses third-party models. See the [licenses folder](./licenses/) for full copyright and license details.
