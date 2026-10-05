@@ -27,9 +27,10 @@ the index have been staged onto a machine.
 .
 ├── requirements.txt         # top-level (frontend) dependencies
 ├── scripts/
-│   ├── download_scene.py    # backend: STAC ingestion, GeoRSCLIP embedding, FAISS index, search + change comparison
+│   ├── build_index.py       # backend: STAC ingestion, GeoRSCLIP embedding, FAISS index, search + change comparison
+│   ├── make_figures.py      # generates sample pictures as proof of concept
 │   ├── requirements.txt     # backend-only dependencies
-│   └── app.py               # Streamlit frontend — search UI, before/after slider, review queue
+│   └── app.py               # INCOMPLETE-Streamlit frontend — search UI, before/after slider, review queue
 ├── test_tiles               # sample tile images used for local testing (not part of the live index)
 └── .gitignore
 ```
